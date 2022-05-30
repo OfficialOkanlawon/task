@@ -1,0 +1,64 @@
+#group{
+    text-align: center;
+    padding: 20px;
+    border: 12px solid;
+    border-radius: 0 10px 0 10px;
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+    padding-top: 30px;
+    margin-top:100px;
+    border-image: linear-gradient(to right, red, orange);
+    border-image-slice: 4;
+    background:url(../img/artworks-000369190860-fdd2xs-t500x500.jpg);
+    position: relative;
+}
+
+
+#group::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.55);
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 390px;
+    height: 400px;
+}
+
+#group-name {
+    z-index: 1;
+    color: white;
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.img {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img img {
+    width: 30%;
+    filter: invert(100%);
+}
+
+.members {
+    z-index: 1;
+    color: white;
+    position: relative;
+}
+
+.members ul li {
+    display: flex;
+    list-style: none;
+}
+
+.members .name {
+    font-size: 30px;
+    font-weight: bold;
+}
